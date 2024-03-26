@@ -23,11 +23,11 @@ class Hotel(models.Model):
     email = models.EmailField(max_length=50)
     status = models.CharField(max_length=20, choices=HOTEL_STATUS, default='Live')
 
-    tags = models.CharField(max_length=40, help_texts="Seperate tags with comma")
+    tags = models.CharField(max_length=40, help_text="Seperate tags with comma")
     views = models.IntegerField(default=0)
     featured = models.BooleanField(default=False)
     slug = models.SlugField(unique=True)
-    date = models.DateTimeField(autho_now_add=True)
+    date = models.DateTimeField(auto_now_add=True)
     price = models.CharField(max_length=100)
 
     def __str__(self) -> str:

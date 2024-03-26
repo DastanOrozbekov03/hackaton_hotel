@@ -44,10 +44,10 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'django_filters',
     'drf_yasg',
-    'ShortUUIDField'
 
     # apps
-    'hotel_user'
+    'hotel_user',
+    'hotel'
 ]
 
 MIDDLEWARE = [
